@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Birthday Bash!</title>
+    <!-- Display the countdown timer in an element -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="hero-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 offset-lg-2 col-lg-10">
+                    <div class="entry-header">
+                        <h2 style = "font-size: 6rem;">Birthday Bash!</h2>
+                        <div class="entry-meta-date">
+                            10.09.19 : Atri's Birthday!
+                        </div><!-- .entry-meta-date -->
+                    </div><!-- .entry-header -->
+                    <h2 id="demo" style = "text-align: center;"></h2>
+                    <h2 style = "text-align: center;">Shilpi | Somdev | Anuska | Atri</h2>
+                    <p style = "text-align: center; color: aqua; font-size: 1rem;">We decided to make this a great success, by pitching in ideas from everyone of us. We made a month-long preparation for this. Plans? Well as we say, it'll be a surprise. Hope you'll enjoy yourself!</p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Sep 11, 2019 15:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+                    </div><!-- .col-12 -->
+                
+            </div><!-- row -->
+            
+        <footer style = "position: sticky; text-align: center; padding-top: 5rem;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+                        <div class="copyright-info">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Deve<i class="fa fa-heart" aria-hidden="true"></i>ed by <a href="https://linkedin.com/in/bosecodes" target="_blank" style="color: inherit; cursor: pointer;">bosecodes</a>
+
+                    </div><!-- col -->
+                </div><!-- row -->
+            </div><!-- container -->
+        
+        </div><!-- .container -->
+    </footer>
+    </div><!-- .hero-content -->
+
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countdown.min.js'></script>
+    <script type='text/javascript' src='js/circle-progress.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+</body>
+</html>
